@@ -5,24 +5,24 @@ Livewire define los datos que se vincularán en ambas direcciones a través del 
 ## Cómo utilizar
 - Copie todo el proyecto a su computadora. El "contenido" aquí se refiere no solo a los archivos, sino a todos los registros históricos, ramas, etiquetas, etc. de todo el proyecto.
 ````sh
-$ git clonar
+$ git clone https://github.com/reproteq/laravel-livewire-country-state-city-cascading-dropdown.git  [directorio-app]
 ````
 - Cambie el nombre del archivo __.env.example__ a __.env__, sus sesiones de usuario y otros datos cifrados no son seguros si la clave de la aplicación no está configurada.
 - Cuando ya tenga composer.lock en su proyecto, puede ejecutar directamente el comando para permitir que Composer instale el paquete y la versión especificados en composer.lock.
 ````sh
-$ instalación del compositor
+$ composer install
 ````
 - Genere una cadena aleatoria de 32 caracteres APP_KEY para ser utilizada por Laravel y guárdela en .env.
 ````sh
-$ php llave artesanal: generar
+$ php artisan key:generate
 ````
 - Ejecutar __migrate__ de la directiva __Artisan__ para ejecutar todas las migraciones pendientes.
 ````sh
-$ php artesanal migrar
+$ php artisan migrate
 ````
 - Ejecutar instala las dependencias a las que hace referencia Laravel Mix y ejecuta todas las tareas de Mix.
 ````sh
-$ npm instalar && npm ejecutar dev
+$ npm install && npm run build && npm run dev
 ````
 - Introduzca la URL de la ruta definida en el navegador para acceder, por ejemplo: http://127.0.0.1:8000.
 - Puedes agregar casas a través de `/houses/create`.

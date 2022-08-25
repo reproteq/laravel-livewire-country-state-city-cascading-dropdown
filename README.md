@@ -1,34 +1,34 @@
-# Laravel 9 Livewire 國家／州／城市連動下拉選單
+# Laravel 9 Livewire Country/State/City Linked Dropdown
 
-Livewire 通過 `wire:model` 屬性定義要雙向繫結的資料，對應的變數名分別為國家、州和城市，如果服務端返回了這個變數，則將其值顯示在輸入框中，反之，如果輸入框修改了這個資料，也會將其更新到服務端，然後將結果渲染到檢視模板中來，在服務端，在元件類中定義了分別國家、州和城市屬性用於實現資料繫結，此外，還通過 `mount()` 方法初始化了該屬性的值。
+Livewire define los datos que se vincularán en ambas direcciones a través del atributo `wire:model`, y los nombres de las variables correspondientes son país, estado y ciudad. Si el servidor devuelve esta variable, su valor se mostrará en el cuadro de entrada; de lo contrario, si la entrada El marco modifica estos datos, también se actualizará en el servidor, y luego el resultado se representará en la plantilla de vista.En el servidor, los atributos de país, estado y ciudad se definen en la clase de componente para implementar datos Además, , y también inicializa el valor de esta propiedad mediante el método `mount()`.
 
-## 使用方式
-- 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
-```sh
-$ git clone
-```
-- 將 __.env.example__ 檔案重新命名成 __.env__，如果應用程式金鑰沒有被設定的話，你的使用者 sessions 和其他加密的資料都是不安全的！
-- 當你的專案中已經有 composer.lock，可以直接執行指令以讓 Composer 安裝 composer.lock 中指定的套件及版本。
-```sh
-$ composer install
-```
-- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
-```sh
-$ php artisan key:generate
-```
-- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
-```sh
-$ php artisan migrate
-```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
-```sh
-$ npm install && npm run dev
-```
-- 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以經由 `/houses/create` 來進行房屋新增。
+## Cómo utilizar
+- Copie todo el proyecto a su computadora. El "contenido" aquí se refiere no solo a los archivos, sino a todos los registros históricos, ramas, etiquetas, etc. de todo el proyecto.
+````sh
+$ git clonar
+````
+- Cambie el nombre del archivo __.env.example__ a __.env__, sus sesiones de usuario y otros datos cifrados no son seguros si la clave de la aplicación no está configurada.
+- Cuando ya tenga composer.lock en su proyecto, puede ejecutar directamente el comando para permitir que Composer instale el paquete y la versión especificados en composer.lock.
+````sh
+$ instalación del compositor
+````
+- Genere una cadena aleatoria de 32 caracteres APP_KEY para ser utilizada por Laravel y guárdela en .env.
+````sh
+$ php llave artesanal: generar
+````
+- Ejecutar __migrate__ de la directiva __Artisan__ para ejecutar todas las migraciones pendientes.
+````sh
+$ php artesanal migrar
+````
+- Ejecutar instala las dependencias a las que hace referencia Laravel Mix y ejecuta todas las tareas de Mix.
+````sh
+$ npm instalar && npm ejecutar dev
+````
+- Introduzca la URL de la ruta definida en el navegador para acceder, por ejemplo: http://127.0.0.1:8000.
+- Puedes agregar casas a través de `/houses/create`.
 
 ----
 
-## 畫面截圖
+## captura de pantalla
 ![](https://i.imgur.com/rBiwhsg.gif)
-> 做成連動下拉選單給客戶填比較不容易出錯
+> Cree un menú desplegable vinculado para que lo completen los clientes, que es menos propenso a errores

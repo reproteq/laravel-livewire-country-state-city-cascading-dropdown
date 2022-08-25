@@ -9,14 +9,15 @@ $ git clone https://github.com/reproteq/laravel-livewire-country-state-city-casc
 ````
 - Cambie el nombre del archivo __.env.example__ a __.env__, sus sesiones de usuario y otros datos cifrados no son seguros si la clave de la aplicación no está configurada.
 - Cuando ya tenga composer.lock en su proyecto, puede ejecutar directamente el comando para permitir que Composer instale el paquete y la versión especificados en composer.lock.
+- 
 ````sh
 $ composer install
-````sh
+````
 
 ````sh
 sudo chmod -R 777 bootstrap/cache
-````sh
 sudo chmod -R 777 storage/
+````
 
 - Genere una cadena aleatoria de 32 caracteres APP_KEY para ser utilizada por Laravel y guárdela en .env.
 
@@ -26,7 +27,7 @@ $ php artisan key:generate
 - Ejecutar __migrate__ de la directiva __Artisan__ para ejecutar todas las migraciones pendientes.
 ````sh
 $ php artisan migrate
-````
+ 
 php artisan db:seed
 ````
 - Ejecutar instala las dependencias a las que hace referencia Laravel Mix y ejecuta todas las tareas de Mix.

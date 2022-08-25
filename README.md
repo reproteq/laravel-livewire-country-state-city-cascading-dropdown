@@ -42,6 +42,8 @@ php artisan serve
 - Introduzca la URL de la ruta definida en el navegador para acceder, por ejemplo: http://127.0.0.1:8000.
 - Puedes agregar casas a través de `/houses/create`.
 
+## Atencion! Funcion demo y solo funciona con country United States.
+
 ----
 
 ## captura de pantalla

@@ -11,14 +11,15 @@ $ git clone https://github.com/reproteq/laravel-livewire-country-state-city-casc
 - Cuando ya tenga composer.lock en su proyecto, puede ejecutar directamente el comando para permitir que Composer instale el paquete y la versión especificados en composer.lock.
 ````sh
 $ composer install
-````
+````sh
 
+````sh
 sudo chmod -R 777 bootstrap/cache
-````
-
+````sh
 sudo chmod -R 777 storage/
-````
+
 - Genere una cadena aleatoria de 32 caracteres APP_KEY para ser utilizada por Laravel y guárdela en .env.
+
 ````sh
 $ php artisan key:generate
 ````

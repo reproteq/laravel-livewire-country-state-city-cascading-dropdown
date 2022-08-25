@@ -12,6 +12,12 @@ $ git clone https://github.com/reproteq/laravel-livewire-country-state-city-casc
 ````sh
 $ composer install
 ````
+
+sudo chmod -R 777 bootstrap/cache
+````
+
+sudo chmod -R 777 storage/
+````
 - Genere una cadena aleatoria de 32 caracteres APP_KEY para ser utilizada por Laravel y guárdela en .env.
 ````sh
 $ php artisan key:generate
@@ -19,6 +25,8 @@ $ php artisan key:generate
 - Ejecutar __migrate__ de la directiva __Artisan__ para ejecutar todas las migraciones pendientes.
 ````sh
 $ php artisan migrate
+````
+php artisan db:seed
 ````
 - Ejecutar instala las dependencias a las que hace referencia Laravel Mix y ejecuta todas las tareas de Mix.
 ````sh
